@@ -1,29 +1,61 @@
-# vue-project
+# Biblioteca Virtual: Proyecto Final
 
-This template should help get you started developing with Vue 3 in Vite.
+Este repositorio contiene el código fuente para una Biblioteca Virtual, una aplicación que permite gestionar libros, usuarios y préstamos de una biblioteca.
 
-## Recommended IDE Setup
+## Requisitos Previos
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Antes de ejecutar la aplicación, asegúrate de tener instalados los siguientes componentes en tu sistema:
 
-## Customize configuration
+- Docker
+- Node.js y npm (ambos incluidos con Node.js)
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Configuración del Backend
 
-## Project Setup
+1. **Clonar el Repositorio:**
 
-```sh
-npm install
-```
+    git clone https://github.com/tu-usuario/tu-repositorio.git
+    cd tu-repositorio/backend
 
-### Compile and Hot-Reload for Development
+2. **Crear Archivo `.env`:**
 
-```sh
-npm run dev
-```
+    Crea un archivo `.env` en el directorio `backend` y configura las variables de entorno necesarias. Puedes utilizar el archivo `.env.example` proporcionado como guía.
 
-### Compile and Minify for Production
+3. **Construir y Ejecutar el Contenedor Docker para el Backend:**
+   
+    
+    docker-compose up -d
 
-```sh
-npm run build
-```
+    Esto iniciará el servidor de Spring Boot y la base de datos PostgreSQL.
+
+## Configuración del Frontend
+
+1. **Navegar al Directorio del Frontend:**
+
+    
+    cd ../frontend/vueproject
+  
+
+2. **Instalar Dependencias:**
+
+   
+    npm install
+  
+
+3. **Configurar Variables de Entorno del Frontend:**
+
+    Crea un archivo `.env` en el directorio `frontend` y configura las variables según sea necesario. Puedes basarte en el archivo `.env.example`.
+
+4. **Iniciar la Aplicación Vue:**
+
+    
+    npm run serve
+    
+
+    Esto iniciará el servidor de desarrollo de Vue.js.
+
+## Acceder a la Aplicación
+
+Una vez que esta todo en ejecucion la aplicación estará disponible en http://localhost:5173.
+
+¡Listo! 
+
